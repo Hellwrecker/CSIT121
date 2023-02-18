@@ -1,0 +1,25 @@
+body {
+  background-color: #fcc33d;
+  color: #black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-transform: none;
+}
+p{
+	color: #000000;
+}
+li{
+	color: #4fc704;
+}
+h1{
+	color: #ed3915;
+
+}
+h2{
+	color: #0d02d4;
+
+}
+h3{
+	color: #f7f014;
+	text-transform: inherit;
+}
