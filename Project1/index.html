@@ -1,0 +1,83 @@
+<!DOCTYPE HTML> 
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=auto, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title> Home </title>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="computertechnology.html">Computer Technology</a>
+    <a href="moments.html">Moments</a>
+    <a href="moly.html">Moly</a>
+  </div>
+ 
+  <h1><b>George's Three Things</b></h1>
+  <h2>Hello, my name is George. </h2>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <p><b>1 / 3</b></p>
+      <img src="images/Me.jpg" alt="Me">
+  </div>
+
+  <div class="mySlides fade">
+      <p><b>2 / 3</b></p>
+    <img src="images/Me2.jpg" alt="Me2">
+  </div>
+
+  <div class="mySlides fade">
+      <p><b>3 / 3</b></p>
+    <img src="images/Me3.jpg" alt="Me3">
+  </div>
+  <div>
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+  </div>
+
+  </div>    
+  <h2>I am from <i><b>Greece</i></b> and I am studying <i>Information Technology</i>. I created this website to talk about "Three things" about me that will display all that I have learned in CSIT 121. 
+  </h2>
+  <hr>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+  <div>
+    <footer> 
+      Author: George Biniaris<br><br>
+      Copyright (c) 2023. All rights reserved. <br><br>      
+    </footer>
+  </div>
+
+</div>
+</body>
+</html> 
