@@ -27,8 +27,6 @@ h3{
 }
 
 
-container { margin: 0 auto; width: 80%; }
-
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -105,5 +103,13 @@ a:hover {
 
 #wrapper {width:90%;  margin: 0 auto; }
 
+}
+
+@media (max-width: 768px)
+.element { 
+display: flex;
+margin: 0 auto;
+width: 80%;
+flex-wrap: wrap;
 }
  
