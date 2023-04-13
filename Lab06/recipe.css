@@ -67,9 +67,14 @@ a:hover {
   margin-right: auto;
   width: 90%;
 
+.element1 { 
+display: flex;
+margin: 0 auto;
+width: 80%;
+flex-wrap: wrap;
+}
 
-@media (max-width: 768px)
-.element { 
+.element2 { 
 display: flex;
 margin: 0 auto;
 width: 80%;
