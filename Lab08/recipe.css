@@ -1,0 +1,215 @@
+* { 
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #fcc33d;
+  color: #black;
+  font-family: sans-serif;
+  margin: 0;
+  text-transform: none;
+}
+
+p{
+	color: #000000;
+}
+
+li{
+	color: #4fc704;
+}
+
+h1{
+	color: #ed3915;
+
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h3{
+	color: #0d02d4;
+	text-transform: inherit;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.element1 {
+  flex: 1 0 50%;
+}
+
+.element2 {
+  flex: 1 0 50%;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: red;
+}
+
+.fit-picture {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 69%;
+}
+
+table, th, td {
+  border:1px solid blue;
+  width: 50%;
+  }
+  .col1 {
+    width: 70%;
+  }
+  .col2 {
+    width: 30%;
+  }
+
+
+
+
+
+
+	height: 100vh;
+	width: 100%;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+
+}
+
+
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("images/tsoup1.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btns{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btnr{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+.fit-picture {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
+.element1 { 
+display: flex;
+margin: 0 auto;
+width: 80%;
+flex-wrap: wrap;
+}
+
+.element2 { 
+display: flex;
+margin: 0 auto;
+width: 80%;
+flex-wrap: wrap;
+}
+ 
+.contact-box{
+	grid-template-columns: 1fr;
+}
+
+.left{
+	height: 200px;
+}
